@@ -60,6 +60,10 @@ section {
     cursor: pointer;
 }
 
+.header .navbar a.active {
+    color: #ffa500;
+}
+
 .header .logo {
     font-size: 25px;
     font-weight: 600;
