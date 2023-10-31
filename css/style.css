@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: #000;
+}
+
+.heading {
+    font-size: 33px;
+    text-align: center;
+}
+
+.heading span {
+    font-size: 36px;
+    color: #ffa500;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+}
+
+.container {
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    z-index: 99;
+    border-bottom: 1px solid #777;
+}
+
+.header #menu-icon,
+.header #close-icon {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .navbar {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.header .navbar a {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header .logo {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.header .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .location i,
+.header .location span {
+    font-size: 18px;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home img {
+    border-radius: 50%;
+}
+
+.home .home-content {
+    position: relative;
+}
+
+.home .home-content h1 {
+    font-size: 63px;
+}
+
+.home .home-content h2 {
+    font-size: 43px;
+}
+
+.home .home-content p {
+    font-size: 23px;
+}
+
+.girlfriend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.girlfriend .girlfriend-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.girlfriend .girlfriend-container .girlfriend-box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.10);
+}
+
+.girlfriend .girlfriend-container .girlfriend-box img {
+    width: 100%;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.girlfriend .girlfriend-container .girlfriend-box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 33px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.about {
+    position: relative;
+    height: 100vh;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about .about-container .about-content {
+    position: relative;
+}
+
+.about .about-container .about-content h2 {
+    font-size: 33px;
+}
+
+.about .about-container .about-content p {
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.services {
+    position: relative;
+    height: 100vh;
+}
+
+.services .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.services .service-container .service-box {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+}
+
+.services .service-container .service-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .header #menu-icon {
+        display: flex;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header .location span {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    .home .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home .home-content h2 {
+        font-size: 36px;
+    }
+
+    .home .home-content p {
+        font-size: 23px;
+    }
+
+    .girlfriend .girlfriend-container .girlfriend-box {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-container img {
+        width: 100%;
+    }
+}
